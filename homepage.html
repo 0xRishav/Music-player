@@ -1,0 +1,556 @@
+<!-- This is the homepage of the website -->
+<!-- the css for this page is homepage-styles.css -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Wave</title>
+    <link rel="icon" href="./assets/logo-black-bg.svg" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/homepage-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="/assets/logo 2.svg" alt="logo">
+                <h1>Sound Wave</h1>
+            </div>
+            <h4>FAVOURITES</h4>
+            <div class="search-bar-container">
+                <i class="fas fa-search" class="icon"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="profile-image-container"></div>
+        </nav>
+
+<!-- this is a div which is giving a link to users to upgrade to pro version of app -->
+        <div class="pro-offer">
+            Don’t wait for ad to end, try Sound Wave Pro.
+            <span>
+                Learn more
+                <span><i class="fas fa-chevron-right"></i></span>
+            </span>
+        </div>
+    </header>
+    <main>
+
+        <!-- this is the carousel -->
+<!--         the name of outer carousel wrapper is inner-car -->
+<!--         there are three images in the carousel they are named as car-image-1, car-image-2 and car-image-3. -->
+        
+            <div class="inner-car">
+                <div class="car-image-1">
+
+                </div>
+                <div class="car-image-2">
+
+                </div>
+                <div class="car-image-3">
+                    
+                </div>
+            </div>
+
+
+<!-- this is the top of this month section  -->
+        <section class="Top-of-month">
+            <h1>Top Of This Month</h1>
+
+
+<!--  below is the grid in which will contain 4 song containers -->
+            <div class="grid-container">
+
+
+                <!-- this is song contaner -->
+                <!-- song container contains the song image, name, date, options and drop down -->
+                <div class="song-container">
+
+
+                    <!-- this is the the play button which becomes visible when you hover on song image -->
+                    <div class="song-thumbnail-container-closer">
+                        <div class="play-button-cover">
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="song-name-data-container">
+                        <h2>Closer</h2>
+                        <caption>July, 2016</caption>
+                    </div>
+
+                    <!-- thos is the dropdown menu which comes when you click on option button -->
+                    <div class="top-of-this-month-drop-down">
+                        <a href="#drop-down-menu-closer" class="options-button"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+                        <div class="drop-down-menu flex-column" id="drop-down-menu-closer">
+                            <div class="play-now-option flex-row">
+                                <i class="fas fa-play"></i>
+                                <h6>Play Now</h6>
+                            </div>
+                            <hr>
+                            <div class="add-to-queue-option flex-row">
+                                <i class="fas fa-list"></i>
+                                <h6>Add to queue</h6>
+                            </div>
+                            <hr>
+                            <div class="get-info-option flex-row">
+                                <i class="fas fa-info-circle"></i>
+                                <h6>Get info</h6>
+                            </div>
+                            <hr>
+                            <a href="#" style="color: black;">
+                                <div class="close-option flex-row">
+                                    <i class="far fa-times-circle"></i>
+                                    <h6>Close</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- this is second song container -->
+                <div class="song-container">
+                    <div class="song-thumbnail-container-changes">
+                        <div class="play-button-cover">
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="song-name-data-container">
+                        <h2>Changes</h2>
+                        <caption>Feb, 2020</caption>
+                        
+                    </div>
+                    <div class="top-of-this-month-drop-down">
+                        <a href="#drop-down-menu-changes" class="options-button"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+                        <div class="drop-down-menu flex-column" id="drop-down-menu-changes">
+                            <div class="play-now-option flex-row">
+                                <i class="fas fa-play"></i>
+                                <h6>Play Now</h6>
+                            </div>
+                            <hr>
+                            <div class="add-to-queue-option flex-row">
+                                <i class="fas fa-list"></i>
+                                <h6>Add to queue</h6>
+                            </div>
+                            <hr>
+                            <div class="get-info-option flex-row">
+                                <i class="fas fa-info-circle"></i>
+                                <h6>Get info</h6>
+                            </div>
+                            <hr>
+                            <a href="#" style="color: black;">
+                                <div class="close-option flex-row">
+                                    <i class="far fa-times-circle"></i>
+                                    <h6>Close</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- this is third song container -->
+                <div class="song-container">
+                    <div class="song-thumbnail-container-hymn">
+                        <div class="play-button-cover">
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="song-name-data-container">
+                        <h2>Hymn for the weekend</h2>
+                        <caption>Jan, 2016</caption>
+                    </div>
+                    <div class="top-of-this-month-drop-down">
+                        <a href="#drop-down-menu-hymn" class="options-button"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+                        <div class="drop-down-menu flex-column" id="drop-down-menu-hymn">
+                            <div class="play-now-option flex-row">
+                                <i class="fas fa-play"></i>
+                                <h6>Play Now</h6>
+                            </div>
+                            <hr>
+                            <div class="add-to-queue-option flex-row">
+                                <i class="fas fa-list"></i>
+                                <h6>Add to queue</h6>
+                            </div>
+                            <hr>
+                            <div class="get-info-option flex-row">
+                                <i class="fas fa-info-circle"></i>
+                                <h6>Get info</h6>
+                            </div>
+                            <hr>
+                            <a href="#" style="color: black;">
+                                <div class="close-option flex-row">
+                                    <i class="far fa-times-circle"></i>
+                                    <h6>Close</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- this is forth song container -->
+                <div class="song-container">
+                    <div class="song-thumbnail-container-something">
+                        <div class="play-button-cover">
+                            <i class="fas fa-play fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="song-name-data-container">
+                        <h2>Something just like this</h2>
+                        <caption>Feb, 2017</caption>
+                    </div>
+                    
+                    <div class="top-of-this-month-drop-down">
+                        <a href="#drop-down-menu-something" class="options-button"><i class="fas fa-ellipsis-v fa-2x"></i></a>
+                        <div class="drop-down-menu flex-column" id="drop-down-menu-something">
+                            <div class="play-now-option flex-row">
+                                <i class="fas fa-play"></i>
+                                <h6>Play Now</h6>
+                            </div>
+                            <hr>
+                            <div class="add-to-queue-option flex-row">
+                                <i class="fas fa-list"></i>
+                                <h6>Add to queue</h6>
+                            </div>
+                            <hr>
+                            <div class="get-info-option flex-row">
+                                <i class="fas fa-info-circle"></i>
+                                <h6>Get info</h6>
+                            </div>
+                            <hr>
+                            <a href="#" style="color: black;">
+                                <div class="close-option flex-row">
+                                    <i class="far fa-times-circle"></i>
+                                    <h6>Close</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- this is popular artist section -->
+        <section class="popular-artists">
+            <h1>Popular Artists</h1>
+
+            <!-- bellow is the wrapper for artist container -->
+            <div class="all-artist-container">
+
+                <!-- this is artist container which contain artist image and artist name and it have the link to playlist page -->
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Justin"></div>
+                        <h3>Justin Bieber</h3>
+                    </div>
+                </a>
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Marshmello"></div>
+                        <h3>Marshmello</h3>
+                    </div>
+                </a>
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Ed"></div>
+                        <h3>Ed Sheeran</h3>
+                    </div>
+                </a>
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Beyonce"></div>
+                        <h3>Beyonce</h3>
+                    </div>
+                </a>
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Eminem"></div>
+                        <h3>Eminem</h3>
+                    </div>
+                </a>
+                <a href="./playlist-page.html">
+                    <div class="artist-container">
+                        <div class="artist-image-container-Taylor"></div>
+                        <h3>Taylor Swift</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+<!-- this is soundwave station section -->
+<!-- this contains all the stations and show their name when you hover on them with the help of a layover div-->
+        <section class="sw-station">
+            <h1>Sound Wave Station</h1>
+            <div class="sw-station-background">
+                <div class="sw-station-image"></div>
+                
+
+                <!-- this the first station image and div below that  -->
+                <div class="rock-image sw-station-gernes">
+                    <div class="overlay">
+                        <h6>Rock</h6>
+                    </div>
+                </div>
+                <div class="chill-image sw-station-gernes">
+                    <div class="overlay">
+                        <h6>Chill</h6>
+                    </div>
+                </div>
+                <div class="love-image sw-station-gernes">
+                    <div class="overlay">
+                        <h6>Love</h6>
+                    </div>
+                </div>
+                <div class="pop-image sw-station-gernes">
+                    <div class="overlay">
+                        <h6>Pop</h6>
+                    </div>
+                </div>
+                <div class="retro-image sw-station-gernes">
+                    <div class="overlay">
+                        <h6>Retro</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- this is the gernes section -->
+        <section class="gernes">
+            <h1>Gernes</h1>
+
+            <!-- bellow is the all gernes wrapper -->
+            <div class="all-gernes-cover">
+
+
+                <!-- below is the individual gernes wrapper which containes image and name of gernes -->
+                <div class="individual-gernes-container">
+                    <div class="rock-music"></div>
+                    <h3>Rock</h3>
+                </div>
+                <div class="individual-gernes-container">
+                    <div class="electronic-music"></div>
+                    <h3>Electronic</h3>
+                </div>
+                <div class="individual-gernes-container">
+                    <div class="pop-music"></div>
+                    <h3>Pop</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- this is the latest release section -->
+        <!-- this was same as the artist section so those same classes are attached here also -->
+        <!-- individual container containes image and name of the song -->
+        <section class="latest-release">
+            <h1>Latest Release</h1>
+            <div class="all-song-container">
+                <div class="artist-container">
+                    <div class="artist-image-container-Justin"></div>
+                    <h3>Purpose</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container-Marshmello"></div>
+                    <h3>Happier</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container-Ed"></div>
+                    <h3>Perfect</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container-Beyonce"></div>
+                    <h3>Halo</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container-Eminem"></div>
+                    <h3>Rap God</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container-Taylor"></div>
+                    <h3>Reputation</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- this is the aside section -->
+        <aside class="aside-section-2">
+            <div class="aside-section-div">
+
+                <!-- div bellow contains the heading and the icon for option for aside section -->
+                <div class="all-heading-div">
+                <h1>Queue</h1>
+                <div class="aside-drop-down-menu">
+
+                    <!-- this is the drop down menu of aside section -->
+                    <a href="#aside-drop-down">
+                        <div class="icon-container">
+                            <caption>Queue</caption>
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                    </a>
+                    <div class="aside-drop-down-content" id="aside-drop-down">
+                        <!-- this is the playlist option in the dropdown menu -->
+                        <div class="playlist-option flex-row">
+                            <i class="fas fa-list-ul"></i>
+                            <h6>Playlist</h6>
+                        </div>
+                        <hr>
+                        <!-- this is the queue option in the dropdown menu -->
+                        <div class="queue-option flex-row">
+                            <i class="fab fa-hive"></i>
+                            <h6>Queue</h6>
+                        </div>
+                        <hr>
+                        <!-- this is the close option in the dropdown menu -->
+                        <a href="#" class="flex-row">
+                            <div class="close-option flex-row">
+                                <i class="far fa-times-circle"></i>
+                                <h6>Close</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                
+                <!-- bellow is the the aside song wrapper -->
+                <div class="all-aside-song-container">
+
+                <!-- bellow are the aside song containers which contains the song image, name and albums -->
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container">
+                            <i class="fas fa-play fa-3x aside-play-icon"></i> <!-- this is the play icon for first song -->
+                        </div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                    <div class="individual-aside-song-container">
+                        <div class="aside-image-container"></div>
+                        <div class="song-name-and-album-container">
+                            <h3>Yummy</h3>
+                            <caption>Changes</caption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+<!-- this is the bottom music player -->
+<!-- this contains of two main container 1.left side container and 2. right side container -->
+
+
+
+        <div class="music-player">
+
+            <!-- the left side container container contains the backward, play and forward icon -->
+            <div class="left-side-icon-container flex-row">
+                <div class="backward-slip-icon">
+                    <i class="fas fa-step-backward fa-2x"></i>
+                </div>
+                <div class="play-icon">
+                    <i class="fas fa-play fa-2x"></i>
+                </div>
+                <div class="forward-skip-icon">
+                    <i class="fas fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+
+            <!-- the right side container contains the volume, song's name & image and player  -->
+            <div class="right-side-container flex-row">
+                <div class="volume-icon-container">
+                    <i class="fas fa-volume-up fa-2x"></i>
+                </div>
+                <div class="music-player-song-container flex-row">
+                    <div class="music-player-image-container"></div>
+                    <div class="music-player-name-artist-container flex-column">
+                        <h4>Summer</h4>
+                        <caption>Marshmello</caption>
+                    </div>
+                </div>
+                <div class="music-player-range-container">
+                    <span><caption>1:26</caption></span>
+                    <div class="range-container">
+                        <div class="range-filler"></div>
+                    </div>
+                    <span><caption>2:30</caption></span>
+                    
+                </div>
+            </div>
+
+        </div>
+    
+</body>
+</html>

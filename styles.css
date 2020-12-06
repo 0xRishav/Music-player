@@ -1,0 +1,195 @@
+/* this is the stylesheet for the cover page */
+
+/*******************UNIVERSAL STYLES***************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1px;
+}
+
+/*************************CSS VARIABLES*************************/
+:root{
+    --gradient-bg: linear-gradient(45deg,#F2C727, #C13584, #E1306C, #d64444);
+    --text-black: #1D1D1D;
+    --text-white: #F1F1F1;
+    --button-bg-clr: #FB3A50;
+    --button-bg-clr-hov: #fb3a50d8;
+}
+
+/* this is the animation for the div in the middle */
+
+@keyframes color-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+/**********************NAV SECTION************************/
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-container img{
+    width: 50rem;
+}
+.logo-container h1{
+    font-size: 25rem;
+    margin-left: 15rem;
+    font-weight: 700;
+    height: 50%;
+}
+header{
+    margin-top: 10px;
+    height: 10vh;
+}
+nav{
+    margin-top: 10px;
+    width: 90%;
+    margin: auto;
+    /* background-color: cyan; */
+}
+
+
+
+/***********************MIDDLE SECTION***************************/
+
+/* This is the div with animation in the middle */
+
+
+.mid-div{
+    height: 50vh;
+    width: 100vw;
+    margin-top: 5vh;
+    background-image: var(--gradient-bg);
+    background-size: 400%;
+    animation: color-animation 4s ease-in-out infinite;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mid-div h6 {
+    font-size: 32rem;
+    /* margin: 20rem; */
+    /* margin-top: 100rem; */
+    /* padding-top: 50rem; */
+    margin-left: 30rem;
+    color: var(--text-white);
+}
+.mid-div h1 {
+    font-size: 100rem;
+    color: var(--text-white);
+    margin: 0rem 20rem;
+}
+
+
+/**********************************LISTEN NOW BUTTON*****************************/
+
+
+.listen-button{
+    position: absolute;
+    bottom: 10vh;
+    left: 45vw;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    outline: none;
+    width: 160rem;
+    height: 50rem;
+    border-radius: 50rem;
+    background-color: var(--button-bg-clr);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-white);
+}
+.listen-button:hover{
+    background-color: var(--button-bg-clr-hov);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+/******************MEDIA QUERIES******************/
+
+@media screen and (max-width:1024px){
+    .mid-div{
+        height: 58vh;
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .listen-button{
+        left: 40vw;
+    }
+}
+
+
+
+@media screen and (max-width:570px){
+    html{
+        font-size: 0.6px;
+    }
+    .listen-button{
+        left: 40vw;
+        font-size: 19rem;
+    }
+}
+
+
+
+@media screen and (max-width:425px){
+    html{
+        font-size: 0.7px;
+    }
+    .logo-container{
+        margin-top: 3vh;
+    }
+    .mid-div{
+        height: 47vh;
+        margin-top: 8vh;
+    }
+    .listen-button{
+        left: 36vw;
+        font-size: 18rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:375px){
+    html{
+        font-size: 0.6px;
+    }
+    .listen-button{
+        left: 40vw;
+        font-size: 19rem;
+    }
+}
+
+
+@media screen and (max-width:320px){
+    html{
+        font-size: 0.5px;
+    }
+    .listen-button{
+        left: 35vw;
+        font-size: 19rem;
+        bottom: 14vh;
+    }
+}

@@ -1,0 +1,848 @@
+/* this is the stylesheet for homepage.html */
+
+/*******************UNIVERSAL STYLES***************************************/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 1.87rem;
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.32rem;
+}
+
+h6{
+    font-size: 1.2rem;
+}
+
+
+
+
+/*UNIVERSAL CLASSES AND VARIABLES*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+}
+:root{
+    --main-bg-color: white;
+    --search-shadow-clr: #EDEDED;
+    --link-color: #0066CC;
+    --inner-car-dropshadow-clr: #111111;
+    --gradient-pink-shade: #EB717B;
+    --gradient-yellow-shade: #F2C777;
+    --main-gradient: linear-gradient(90deg, #EB717B 0%, #F2C777 100%); 
+}
+
+
+
+/*All sections*/
+section{
+    margin-bottom: 30px;
+}
+section h1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/***********************NAV SECTION*******************************/
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    height: 5.3rem;
+    width: 5.3rem;
+}
+
+
+/*SEARCH BAR CONTAINER*/
+
+.search-bar-container{
+    height: 3.4rem;
+}
+.search-bar-container i{
+    position: absolute;
+    padding: 12px;
+}
+.search-bar-container input{
+    background-color: rgba(0, 0, 0, 0.07);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 4px 11px var(--search-shadow-clr);
+    width: 342px;
+    height: 34px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    border-radius: 1rem;
+    
+}
+
+
+.profile-image-container{
+    height: 6rem;
+    width: 6rem;
+    background-image: url(./images-compressed/pp-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10rem;
+}
+
+
+/*OFFER TO SUBSCRIBE TO PRO MEMBERSHIP*/
+.pro-offer{
+    height: 5vh;
+    width: 100vw;
+    background: var(--main-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.pro-offer>span{
+    color: var(--link-color);
+    margin-left: 20px;
+}
+
+/************************************MAIN SECTION*******************************/
+
+main{
+    display: inline-block;
+    width: 69%;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    margin-left: 5%;
+}
+.aside-section-2{
+    display: inline-block;
+    width: 20%;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    vertical-align: top;
+    margin-right: 5%;
+}
+
+
+/**********Carousel************/
+
+
+.inner-car{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    right: 7vw;
+}
+.inner-car div{
+
+    height: 30vh;
+    width: 30vw;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 8px #111111);
+    transition: all .2s ease-in-out;
+}
+.inner-car div:hover{
+    transform: scale(1.25);
+}
+.car-image-1{
+    background: url(./images-compressed/carousel-1-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    left: 10vw;
+    z-index: 1;
+}
+.car-image-2{
+    background: url(./images-compressed/carousel-2-min.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+}
+.car-image-3{
+    background: url(./images-compressed/carousel-3-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    right: 10vw;
+}
+.car-image-1:hover{
+    z-index: 999;
+}
+.car-image-2:hover{
+    z-index: 999;
+}
+.car-image-3:hover{
+    z-index: 999;
+}
+
+
+
+
+
+/**************************************Top of the month section*******************************/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+}
+
+/*this is to setup the image divs in the song containers*/
+.song-container>div{
+    /*background setup*/
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 4px;
+    background-position: center;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.song-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    position: relative;
+}
+
+
+/*bellow is to setup all the images in individual divs*/
+.song-thumbnail-container-closer{
+    background-image: url(./images-compressed/closer-thumbnail.jpg);
+}
+.song-thumbnail-container-changes{
+    background-image: url(./images-compressed/changes.jpg);
+}
+.song-thumbnail-container-hymn{
+    background-image: url(./images-compressed/hymn-thumbnail.jpg);
+}
+.song-thumbnail-container-something{
+    background-image: url(./images-compressed/something-thumbnail.jpg);
+}
+
+
+/*this is for dropdown of top of this month*/
+.top-of-this-month-drop-down{
+    position: relative;
+}
+.drop-down-menu h6{
+    margin-left: 15px;
+}
+.drop-down-menu{
+    backdrop-filter: blur(90px);
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    position: absolute;
+/*     right: 20px; */
+    top: 20px;
+    padding: 5px 10px;
+    display: none;
+    width: 146px;
+    transition: all ease-in-out 2s;
+    z-index: 1000;
+    border: 1px solid black;
+}
+.drop-down-menu>div{
+    margin: 10px 0;
+}
+.drop-down-menu:target{
+
+    display: block;
+}
+.close-option{
+    cursor: pointer;
+}
+
+
+
+/* this is for the play button styles which gets visible when you hover on song image */
+.play-button-cover{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 4px;
+    bottom: 4px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.song-container:hover .play-button-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-button-cover i{
+    color: var(--link-color);
+}
+
+
+
+
+
+/*************************************Popular Artist Section*******************************/
+.all-artist-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.artist-container>div{
+    height: 80px;
+    width: 30vw;
+    border-radius: 50px;
+    background-position: center;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+.artist-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    height: 20vh;
+}
+.all-artist-container a{
+    text-decoration: none;
+    color: black;
+}
+
+/*bellow is to setup all the images in individual divs*/
+.artist-image-container-Justin{
+    background-image: url(./images-compressed/justin-bieber.jpg);
+}
+.artist-image-container-Marshmello{
+    background-image: url(./images-compressed/marshmello.jpg);
+}
+.artist-image-container-Ed{
+    background-image: url(./images-compressed/ed-sheeran-thumbnail.jpg);
+}
+.artist-image-container-Beyonce{
+    background-image: url(./images-compressed/Beyonce.jpg);
+}
+.artist-image-container-Eminem{
+    background-image: url(./images-compressed/Eminem-thumbnail.jpg);
+}
+.artist-image-container-Taylor{
+    background-image: url(./images-compressed/taylor-swift-thumbnail.jpg);
+}
+
+/********************************************SW Station section****************************/
+.sw-station-background>div{
+    position: relative;
+}
+
+/*this is the overlay which gets visible and shows the name when you hover on it*/
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    border-radius: 50px;
+}
+
+
+/*this is to make the opacity 0.8 of overlay when you hover*/
+.sw-station-background>div:hover .overlay{
+    opacity: 0.8;
+}
+.overlay h6{
+    position: relative;
+    color: var(--main-bg-color);
+    left: 35%;
+    top: 40%;
+}
+.sw-station-background{
+    background-color: #dadada;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+/*setup of dimentions of sw station image div*/
+.sw-station-image{
+    background-image: url(./images-compressed/sw-station.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+}
+.sw-station-gernes{
+    height: 80px;
+    width: 80px;
+    border-radius: 200px;
+    background-size: auto 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*setup of image for individual images of sw station*/
+.rock-image{
+    background-image: url(./images-compressed/rock-2-min.jpg);
+}
+.chill-image{
+    background-image: url(./images-compressed/chill-min.jpg);
+}
+.love-image{
+    background-image: url(./images-compressed/Love-min.jpg);
+}
+.pop-image{
+    background-image: url(./images-compressed/pop-2-min.jpg);
+}
+.retro-image{
+    background-image: url(./images-compressed/retro-min.jpg);
+}
+
+
+/********************************Gernes Section************************/
+
+.all-gernes-cover{
+    display: flex;
+    justify-content: space-around;
+    /* height: 100%; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+/*to setup dimentions of individual gernes image divs*/
+.all-gernes-cover div{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-size: auto 150%;
+    background-position: center;
+    margin: 12px;
+    background-repeat: no-repeat;
+}
+.individual-gernes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*images for individual gernes div*/
+.rock-music{
+    background-image: url(./images-compressed/rock-music-min.jpg);
+}
+.electronic-music{
+    background-image: url(./images-compressed/Electronic-Music-min.jpg);
+}
+.pop-music{
+    background-image: url(./images-compressed/Pop-Music-min.jpg);
+}
+
+
+/*since gernes section is same as the artist section the class is applied here with some minor changes*/
+.artist-container>div{
+    height: 80px;
+    width: 80px;
+    border-radius: 4px;
+    background-position: center;
+    background-size: auto 150%;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+}
+
+.all-song-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.zero-radius{
+    border-radius: 0;
+}
+
+
+/*************************ASIDE SECTION**********************************/
+
+.aside-image-container{
+    background-image: url(./images-compressed/justin-bieber.jpg);
+    height: 50px;
+    width: 50px;
+    background-size: auto 150%;
+    background-position: center;
+    border-radius: 4px;
+}
+.all-heading-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-around;
+}
+.individual-aside-song-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.options-button{
+    color: black;
+    align-self: flex-start;
+    margin-left: 8px;
+}
+.options-button i{
+    color: black;
+}
+.individual-aside-song-container div:nth-child(1){
+    margin-left: 30px;
+}
+.individual-aside-song-container div:nth-child(2){
+    margin-left: 15px;
+}   
+
+/*Aside Dropdown*/
+.aside-drop-down-menu{
+    position: relative;
+}
+.aside-drop-down-menu a{
+    color: black;
+    text-decoration: none;
+} 
+.aside-drop-down-content{
+    display: none;
+    backdrop-filter: blur(90px);
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    padding: 5px 10px;
+    display: none;
+    width: 140px;
+    transition: all ease-in-out 2s;
+    z-index: 1000;
+    border: 1px solid black;
+}
+.aside-drop-down-content:target{
+    display: block;
+}
+.aside-drop-down-content h6{
+    margin-left: 15px;
+}
+.aside-drop-down-content>div{
+    margin: 10px 10px;
+}
+.aside-drop-down-content>a{
+    margin: 10px 10px;
+}
+
+.aside-image-container{
+    position: relative;
+    cursor: pointer;
+}
+.aside-play-icon{
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    color: var(--link-color);
+    filter: drop-shadow(2px 3px 10px #FFFFFF);
+}
+
+
+
+/*MUSIC PLAYER*/
+.music-player{
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(-45deg, #EB717B 0%, #F2C777 100%);
+    /* backdrop-filter: blur(91px); */
+    display: flex;
+}
+
+/*left side container*/
+.left-side-icon-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+/*right side container*/
+.right-side-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+}
+
+
+.music-player-range-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.music-player-image-container{
+    background-image: url(./images-compressed/marshmello.jpg);
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    background-size: auto 150%;
+}
+.music-player-name-artist-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+/*this is the container which containes the actual player*/
+
+.range-container{
+    height: 4px;
+    width: 500px;
+    background-color: black;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/*this is the range filler*/
+.range-filler{
+    position: absolute;
+    height: 4px;
+    left: 0;
+    width: 60%;
+    background-color: var(--link-color);
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: -2px 0px 15px var(--link-color) ,0px -2px 15px var(--link-color), 0px 2px 15px var(--link-color);
+}
+
+
+
+
+
+
+/*********MEDIA QUERIES************************************/
+/* i tried to adjust the aside section below the main section but it was not looking good so i just kept it hidden on mobile phones */
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 9px;
+    }
+    .sw-station-gernes{
+    height: 65px;
+    width: 65px;
+    }
+    .overlay{
+    opacity: 0.5;
+    }
+    .overlay>h6{
+        opacity: 1;
+    }
+    .search-bar-container{
+    display: flex;
+    justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 425px){
+    html{
+        font-size: 6px;
+        overflow-x: hidden;
+    }
+    .sw-station-gernes{
+    height: 65px;
+    width: 65px;
+    }
+    .overlay{
+    opacity: 0.5;
+    }
+    .overlay>h6{
+        opacity: 1;
+    }
+    .search-bar-container{
+    display: none;
+    }
+    .aside-section-2{
+        display: none;
+    }
+    main{
+    display: inline-block;
+    width: 90%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 5%;
+    }
+}
+
+
+
+@media screen and (max-width: 375px){
+    html{
+        font-size: 6px;
+    }
+    .sw-station-gernes{
+    height: 50px;
+    width: 50px;
+    }
+    .overlay{
+    opacity: 0.5;
+    }
+    .overlay>h6{
+        opacity: 1;
+    }
+    .search-bar-container{
+    display: none;
+    }
+    .aside-section-2{
+        display: none;
+    }
+    main{
+    display: inline-block;
+    width: 84%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 8%;
+    }
+    .drop-down-menu{
+        width: 90px;
+    }
+    body{
+        overflow-x:hidden;
+    }
+    .all-gernes-cover div{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    }
+    .inner-car div{
+
+    height: 20vh;
+    width: 40vw;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 8px #111111);
+    transition: all .2s ease-in-out;
+    margin: auto; 
+    }
+    .inner-car{
+    right: 1vw;
+    }
+    label[for="more"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    html{
+        overflow-x:hidden;
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+    html{
+        font-size: 5px;
+        overflow-x: hidden;
+    }
+    .sw-station-gernes{
+    height: 50px;
+    width: 50px;
+    }
+    .overlay{
+    opacity: 0.5;
+    }
+    .overlay>h6{
+        opacity: 1;
+    }
+
+    .aside-section-2{
+        display: none;
+    }
+    main{
+    display: inline-block;
+    width: 84%;
+    height: 100vh;
+    background-color: white;
+    margin-left: 8%;
+    }
+    .drop-down-menu{
+        width: 90px;
+    }
+    body{
+        overflow-x:hidden;
+    }
+    .all-gernes-cover div{
+    width: 250px;
+    height: 175px;
+    margin: 10px;
+    }
+    .inner-car div{
+    height: 20vh;
+    width: 40vw;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 8px #111111);
+    transition: all .2s ease-in-out;
+    margin: auto; 
+    }
+    .inner-car{
+    right: 1vw;
+    }
+}

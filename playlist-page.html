@@ -1,0 +1,258 @@
+<!-- This is the playlist page -->
+<!-- The css of this page is playlist-styles.css -->
+<!-- this is my third page so this time i improved my class naming and also created some universal classes to use flexbox in html only -->
+<!-- hope you like this page -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Wave</title>
+    <link rel="icon" href="./assets/logo-black-bg.svg" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./playlist-styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- this is the header same as the homepage -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="/assets/logo 2.svg" alt="logo">
+                <h1>Sound Wave</h1>
+            </div>
+            <h4>FAVOURITES</h4>
+            <div class="search-bar-container">
+                <i class="fas fa-search" class="icon"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="profile-image-container"></div>
+        </nav>
+        <div class="pro-offer">
+            Don’t wait for ad to end, try Sound Wave Pro.
+            <span>
+                Learn more
+                <span><i class="fas fa-chevron-right"></i></span>
+            </span>
+        </div>
+    </header>
+
+
+<!-- this is the body wrapper which is gonna wrap the content and it will be of 90% only -->
+    <div class="body-wrapper">
+        <main>
+            <!-- this is the section to contain artist image and about the artist -->
+            <div class="artist-wrapper flex-row align-center flex-wrap">
+                <div class="artist-image">
+
+                </div>
+                <div class="about-artist flex-column align-flex-start">
+                    <h1>Marshmello</h1>
+                    <p>American DJ</p>
+                    <h5>Chris Comstock, better known by his stage name Marshmello, was born on May 19, 1992. He is an American electronic dance music producer and DJ. He first gained international recognition by remixing songs by Jack Ü and Zedd, and later collaborated with artists including Omar LinX, Ookay, Jauz and Slushii.</h5>
+                    <div class="button-wrapper flex-row justify-center justify-space-between">
+                        <button id="play-btn">Play All</button>
+                        <button id="follow-btn">Follow</button>
+                    </div>
+                    <p>30M Instagram Followers || 40M Youtube Subscribers</p>
+                </div>
+            </div>
+
+                <!-- These are the individual songs of that artist  -->
+                <!-- Each song container containes the number, image, name, like icon and add to playlist icon -->
+            <div class="song-wrapper flex-column">
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>01</h6>
+                    <div class="song-image-01"></div>
+                    <h3>Summer</h3>
+                    <h6>3:26</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>02</h6>
+                    <div class="song-image-02"></div>
+                    <h3>Happier</h3>
+                    <h6>2:57</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>03</h6>
+                    <div class="song-image-03"></div>
+                    <h3>Alone</h3>
+                    <h6>5:25</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>04</h6>
+                    <div class="song-image-04"></div>
+                    <h3>Friends</h3>
+                    <h6>3:15</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>05</h6>
+                    <div class="song-image-05"></div>
+                    <h3>Be Kind</h3>
+                    <h6>2:56</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+                <div class="song-container flex-row justify-space-around align-center">
+                    <h6>06</h6>
+                    <div class="song-image-06"></div>
+                    <h3>Wolves</h3>
+                    <h6>3:26</h6>
+                    <i class="far fa-heart fa-2x"></i>
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+            </div>
+        </main>
+
+
+<!-- This is the aside section it contains similar artist and recently played div -->
+        <aside>
+
+            <!-- this is similar artist wrapper -->
+            <div class="similar-artist-wrapper flex-column justify-space-between align-center">
+                <div class="similar-artist-heading-container flex-row align-center justify-space-between">
+                    <h2>Similar Astist</h2>
+                    <p>View All</p>
+                </div>
+                
+                <!-- this is individual similar artist div -->
+                <!-- it contains artist image, name, and option icon -->
+                    <div class="individual-similar-artist-container flex-row justify-space-between align-center">
+                        <div class="similar-artist-image-container-justin"></div>
+                        <div class="individual-similar-artist-name-container flex-column justify-space-around align-center">
+                            <h3>Justin Bieber</h3>
+                            <p>Canadian singer</p>
+                        </div>
+                        <div class="similar-artist-icon-container flex-column justify-space-between align-flex-end">
+                            <i class="fas fa-ellipsis-v"></i>
+                            <p>4:44</p>
+                        </div>
+                    </div>
+
+                    <div class="individual-similar-artist-container flex-row justify-space-between align-center">
+                        <div class="similar-artist-image-container-ed"></div>
+                        <div class="individual-similar-artist-name-container flex-column justify-space-around align-center">
+                            <h3>Ed Sheeran</h3>
+                            <p>American singer</p>
+                        </div>
+                        <div class="similar-artist-icon-container flex-column justify-space-between align-flex-end">
+                            <i class="fas fa-ellipsis-v"></i>
+                            <p>5:23</p>
+                        </div>
+                    </div>
+
+                    <div class="individual-similar-artist-container flex-row justify-space-between align-center">
+                        <div class="similar-artist-image-container-beyonce"></div>
+                        <div class="individual-similar-artist-name-container flex-column justify-space-around align-center">
+                            <h3>Beyonce</h3>
+                            <p>American singer</p>
+                        </div>
+                        <div class="similar-artist-icon-container flex-column justify-space-between align-flex-end">
+                            <i class="fas fa-ellipsis-v"></i>
+                            <p>2:56</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- This is recently played div -->
+            <div class="recently-played-wrapper flex-column justify-space-between align-center">
+                <div class="recently-played-heading-container flex-row align-center justify-space-between">
+                    <h3>Recently-Played</h3>
+                    <p>View All</p>
+                </div>
+
+                <!-- this is individual recently played songs -->
+                <!-- it consist of song image, name and like icon -->
+                <div class="individual-recently-played-wrapper flex-column justify-space-around align-center">
+                    <div class="individual-recently-played-container flex-row justify-space-between align-center">
+                        <div class="recently-played-image-container-changes"></div>
+                        <div class="individual-recently-played-name-container flex-column justify-space-around align-center">
+                            <h5>Habitual</h5>
+                            <p>Changes</p>
+                        </div>
+                        <i class="far fa-heart fa-2x recently-played-icon"></i>
+                    </div>
+                    <div class="individual-recently-played-container flex-row justify-space-between align-center">
+                        <div class="recently-played-image-container-changes"></div>
+                        <div class="individual-recently-played-name-container flex-column justify-space-around align-center">
+                            <h5>Intentions</h5>
+                            <p>Changes</p>
+                        </div>
+                        <i class="far fa-heart fa-2x recently-played-icon"></i>
+                    </div>
+                    <div class="individual-recently-played-container flex-row justify-space-between align-center">
+                        <div class="recently-played-image-container-changes"></div>
+                        <div class="individual-recently-played-name-container flex-column justify-space-around align-center">
+                            <h5>Get Me</h5>
+                            <p>Changes</p>
+                        </div>
+                        <i class="far fa-heart fa-2x recently-played-icon"></i>
+                    </div>
+                    <div class="individual-recently-played-container flex-row justify-space-between align-center">
+                        <div class="recently-played-image-container-changes"></div>
+                        <div class="individual-recently-played-name-container flex-column justify-space-around align-center">
+                            <h5>E.T.A</h5>
+                            <p>Changes</p>
+                        </div>
+                        <i class="far fa-heart fa-2x recently-played-icon"></i>
+                    </div>
+                </div>
+
+
+                </div>
+        </aside>
+    </div>
+
+
+<!-- This is bottom music player same as in homepage.html -->
+
+    <div class="music-player">
+        <div class="left-side-icon-container flex-row">
+            <div class="backward-slip-icon">
+                <i class="fas fa-step-backward fa-2x"></i>
+            </div>
+            <div class="play-icon">
+                <i class="fas fa-play fa-2x"></i>
+            </div>
+            <div class="forward-skip-icon">
+                <i class="fas fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="right-side-container flex-row">
+            <div class="volume-icon-container">
+                <i class="fas fa-volume-up fa-2x"></i>
+            </div>
+            <div class="music-player-song-container flex-row">
+                <div class="music-player-image-container"></div>
+                <div class="music-player-name-artist-container flex-column">
+                    <h4>Summer</h4>
+                    <caption>Marshmello</caption>
+                </div>
+            </div>
+            <div class="music-player-range-container">
+                <span><caption>1:26</caption></span>
+                <div class="range-container">
+                    <div class="range-filler"></div>
+                </div>
+                <span><caption>2:30</caption></span>
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>

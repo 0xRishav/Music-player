@@ -1,0 +1,530 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--main-bg-color);
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 1.87rem;
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.32rem;
+}
+
+h6{
+    font-size: 1.2rem;
+}
+
+/*UNIVERSAL CLASSES AND VARIABLES*/
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+}
+.justify-flex-start{
+    justify-content: flex-start;
+}
+.justify-flex-end{
+    justify-content: flex-end;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.align-flex-start{
+    align-items: flex-start;
+}
+.align-flex-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.align-space-between{
+    align-items: space-between;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.align-space-around{
+    align-items: space-around;
+}
+
+
+
+/*Variables*/
+:root{
+    --main-bg-color: #f5f5f7;
+    --search-shadow-clr: #ffffff;
+    --link-color: #0066CC;
+    --inner-car-dropshadow-clr: #111111;
+    --gradient-pink-shade: #EB717B;
+    --gradient-yellow-shade: #F2C777;
+    --main-gradient: linear-gradient(90deg, #EB717B 0%, #F2C777 100%); 
+    --sub-bg: white;
+}
+
+
+/***********************************NAVIGATION AND PRO OFFER SAME AS HOMEPAGE*******************************/
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    height: 5.3rem;
+    width: 5.3rem;
+}
+
+
+
+
+.search-bar-container{
+    height: 3.4rem;
+}
+.search-bar-container i{
+    position: absolute;
+    padding: 12px;
+}
+.search-bar-container input{
+    background-color: var(--sub-bg);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 4px 11px var(--search-shadow-clr);
+    width: 342px;
+    height: 34px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    border-radius: 1rem;
+    
+}
+
+
+.profile-image-container{
+    height: 6rem;
+    width: 6rem;
+    background-image: url(./images-compressed/pp-2.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10rem;
+}
+
+.pro-offer{
+    height: 5vh;
+    width: 100vw;
+    background: var(--main-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.pro-offer>span{
+    color: var(--link-color);
+    margin-left: 20px;
+}
+
+
+
+
+
+
+/*****************BODY WRAPPER***************/
+.body-wrapper{
+    width: 90%;
+    margin: 5vh auto;
+    position: relative;
+    height: 100vh;
+    
+}
+.artist-wrapper>div{
+    position: relative;
+    margin: 0 2%;
+}
+
+
+
+/*******************MAIN SECTION**************/
+main{
+    width: 70%;
+    height: 100vh;
+    display: inline-block;
+}
+
+
+
+/*****************About Artist******************/
+.artist-wrapper{
+    background-color: var(--sub-bg);
+    padding: 2% 0;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+}
+.artist-image{
+    background-image: url(./images-compressed/marshmello-2.jpg);
+    height: 200px;
+    min-width: 300px;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    flex-grow: 1;
+}
+.about-artist>*{
+    margin: 1%;
+}
+.about-artist{
+    width: 300px;
+    flex-grow: 1;
+}
+
+/*******************BUTTONS********************/
+#follow-btn{
+    background-color: var(--sub-bg);
+    border: 1px var(--link-color) solid;
+}
+#follow-btn:hover{
+    background-color: var(--link-color);
+}
+#play-btn{
+    background-color: var(--gradient-pink-shade)
+}
+.button-wrapper{
+    width: 41%;
+}
+.button-wrapper button{
+    outline: none;
+    padding: 4% 10%;
+    border: none;
+    cursor: pointer;
+    margin: 2%;
+    border-radius: 5px;
+    transition: all ease-in-out 400ms;
+}
+.button-wrapper button:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/*************SONG SECTION*******/
+.song-wrapper{
+    width: 100%;
+    margin: 2% auto;
+}
+
+.song-container{
+    background-color: var(--sub-bg);
+    padding: 10px;
+    margin: 10px 0;
+    transition: all ease-in-out 400ms;
+    cursor: pointer;
+    box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+}
+.song-container:hover{
+    transform: scale(1.05);
+}
+.song-container>div{
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: auto 150%;
+    border-radius: 10px;
+}
+.song-image-01{
+    background-image: url(./images-compressed/Electronic-Music-min.jpg);
+}
+.song-image-02{
+    background-image: url(./images-compressed/marshmello-2.jpg);
+}
+.song-image-03{
+    background-image: url(./images-compressed/marshmello-3.jpg);
+}
+.song-image-04{
+    background-image: url(./images-compressed/marshmello-4.jpg);
+}
+.song-image-05{
+    background-image: url(./images-compressed/marshmello-5.jpg);
+}
+.song-image-06{
+    background-image: url(./images-compressed/marshmello-6.jpg);
+}
+
+
+
+/*******************ASIDE********************/
+aside{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 3%;
+}
+/**************************SIMILAR ARTISTS*******************/
+.individual-similar-artist-container>div{
+    height: 60px;
+    width: 60px;
+    background-position: center;
+    background-size: auto 150%;
+    border-radius: 10px;
+    margin: 5% 0;
+}
+.similar-artist-image-container-justin{
+    background-image: url(./images-compressed/justin-bieber.jpg);
+}
+.similar-artist-image-container-ed{
+    background-image: url(./images-compressed/ed-sheeran-thumbnail.jpg);
+}
+.similar-artist-image-container-beyonce{
+    background-image: url(./images-compressed/Beyonce.jpg);
+}
+
+
+.similar-artist-heading-container{
+    width: 100%;
+}
+.individual-similar-artist-name-container{
+    flex-grow: 1;
+    margin-left: 30px;
+}
+.individual-similar-artist-name-container>p{
+    margin-top: -10%;
+}
+
+
+.individual-similar-artist-container{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+/**********************RECENTLY PLAYED******************************/
+.recently-played-wrapper{
+    margin-top: 10%;
+}
+
+
+
+
+.individual-recently-played-container>div{
+    height: 40px;
+    width: 40px;
+    background-position: center;
+    background-size: auto 150%;
+    border-radius: 10px;
+    margin: 5% 0;
+}
+.recently-played-image-container-changes{
+    background-image: url(./images-compressed/changes.jpg);
+}
+
+
+.recently-played-heading-container{
+    width: 100%;
+}
+.individual-recently-played-name-container{
+    flex-grow: 1;
+    margin-left: 30px;
+}
+.individual-recently-played-name-container>p{
+    margin-top: -5px;
+}
+
+
+.individual-recently-played-container{
+    position: relative;
+    width: 100%;
+}
+.individual-recently-played-wrapper{
+    width: 90%;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.recently-played-icon{
+    justify-self: flex-end;
+}
+
+
+
+
+
+/***********************************MUSIC PLAYER SAME IN HOMEPAGE********************************/
+
+.music-player{
+    height: 7vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(-45deg, #EB717B 0%, #F2C777 100%);
+    /* backdrop-filter: blur(91px); */
+    display: flex;
+}
+.left-side-icon-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+.right-side-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+}
+.music-player-range-container{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.music-player-image-container{
+    background-image: url(./images-compressed/marshmello.jpg);
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    background-size: auto 150%;
+}
+.music-player-name-artist-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+
+
+.range-container{
+    height: 4px;
+    width: 500px;
+    background-color: black;
+    position: relative;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.range-filler{
+    position: absolute;
+    height: 4px;
+    left: 0;
+    width: 60%;
+    background-color: var(--link-color);
+    z-index: 2;
+    border-radius: 5px;
+    box-shadow: -2px 0px 15px var(--link-color) ,0px -2px 15px var(--link-color), 0px 2px 15px var(--link-color);
+}
+
+
+
+
+
+
+
+/**********************MEDIA QUERIES**********************/
+    @media (max-width: 979px) {
+    html{
+        font-size: 8px;
+    }
+    }
+
+    @media (max-width: 768px) {
+    html{
+        font-size: 6px;
+    }
+    }
+
+    @media (max-width: 425px) {
+    html{
+        font-size: 6px;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    aside{
+        display: block;
+        margin-top: 550px;
+        width: 90%
+    }
+    main{
+        width: 100%;
+    }
+    .search-bar-container{
+        display: none;
+    }
+    .button-wrapper{
+        width: 60%;
+    }
+    #play-btn{
+        width: 70%;
+    }
+    #follow-btn{
+        width: 70%;
+    }
+
+
+
+    .artist-image{
+        height: 300px;
+        background-size: auto 100%;
+    }
+
+    .song-container>div {
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 425px) {
+    html{
+        font-size: 5px;
+    }
+    .artist-image{
+        height: 120px;
+
+    background-size: auto 150%;
+    }
+    aside{
+        margin-top: 350px
+    }
+}
